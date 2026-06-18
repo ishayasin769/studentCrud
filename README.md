@@ -4,9 +4,8 @@ This project is a Node.js Student Management API. Below are steps to build and r
 
 **Prerequisites**
 - Docker (Docker Desktop or Docker Engine) installed and running
-- Docker Compose (v2) available (usually included with Docker Desktop)
 
-**Start the project (development)**
+**Start the project**
 1. Open a terminal in the project root (where `docker-compose.yaml` is located).
 2. Build and start services:
 
@@ -32,19 +31,6 @@ docker compose logs -f
 docker compose down
 ```
 
-**Rebuild after changes**
-If you change code and want to rebuild images, run:
-
-```bash
-docker compose up -d --build
-```
-
-or remove images first and then bring up again:
-
-```bash
-docker compose down --rmi local
-docker compose up --build
-```
 
 **Ports & Environment**
 - The project exposes ports as defined in `docker-compose.yaml`. Adjust environment variables in your compose file or add an `.env` file if needed.
